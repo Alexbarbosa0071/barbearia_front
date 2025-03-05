@@ -1,0 +1,26 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.matRToolbarChanges {
+    background-color: darkgray;
+}
+
+.container {
+    display: flex; /* Magic starts here, turning your container into a flex container */
+    justify-content: left; /* This centers the child horizontally */
+    align-items: center; /* And this centers it vertically */
+    padding-left: 15px;
+}
+.center {
+    width: 50%; /* Set any width you prefer */
+    height: 50%; /* And any height */
+}
+
+.marginContent {
+    margin-right: 50px;
+}
+
+.navidationLink {
+    text-decoration: none;
+}

@@ -1,0 +1,37 @@
+<div class="matCardChange">
+
+    <mat-card appearance="outlined">
+        <mat-card-content>Lista de clientes:</mat-card-content>
+    </mat-card>
+
+    <table mat-table [dataSource]="dataRes" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> Id </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="nomeCompleto">
+            <th mat-header-cell *matHeaderCellDef> Nome Completo </th>
+            <td mat-cell *matCellDef="let element"> {{element.nomeCompleto}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="telefone">
+            <th mat-header-cell *matHeaderCellDef> Telefone </th>
+            <td mat-cell *matCellDef="let element"> {{element.telefone}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="endereco">
+            <th mat-header-cell *matHeaderCellDef> Endereço </th>
+            <td mat-cell *matCellDef="let element"> {{element.endereco}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="ativo">
+            <th mat-header-cell *matHeaderCellDef> Cliente Ativo? </th>
+            <td mat-cell *matCellDef="let element"> {{element.ativo}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

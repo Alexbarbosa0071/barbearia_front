@@ -1,0 +1,23 @@
+<main class="main">
+  <div class="content">
+
+    <mat-toolbar class="matRToolbarChanges">
+      <button mat-button [matMenuTriggerFor]="aboveMenu">Barbearia
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #aboveMenu="matMenu" yPosition="above">
+        <a href="/buscar-clientes" class="navidationLink">
+          <button mat-menu-item>Buscar Clientes</button>
+        </a>
+        <!-- <a href="/cadastrar-cliente" class="navidationLink">
+          <button mat-menu-item>Cadastrar Cliente</button>
+        </a> -->
+      </mat-menu>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>airline_seat_recline_normal</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+</main>
+<router-outlet />
