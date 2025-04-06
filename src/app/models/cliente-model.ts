@@ -9,3 +9,7 @@ export type Cliente = {
 export type Clientes = {
     clientes: Cliente[],
 };
+
+export type DeletarCliente = {
+    Deletado: Boolean,
+};
