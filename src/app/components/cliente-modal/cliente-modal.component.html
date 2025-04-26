@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Atualizar Cliente: {{data.nomeCompleto}}</h2>
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="elem-inline">
+      <mat-label>Nome Completo</mat-label>
+      <input matInput formControlName="nomeCompleto" required>
+    </mat-form-field>
+    <mat-form-field class="elem-inline">
+      <mat-label>Telefone</mat-label>
+      <input matInput formControlName="telefone" required>
+    </mat-form-field>
+    <mat-form-field class="elem-inline">
+      <mat-label>Endereço</mat-label>
+      <input matInput formControlName="endereco" required>
+    </mat-form-field>
+    <mat-dialog-actions>
+      <div class="example-button-row">
+        <button class="elem-inline" mat-stroked-button (click)="onCancel()">Cancelar</button>
+        <button class="elem-inline" mat-flat-button type="submit">Salvar</button>
+      </div>
+    </mat-dialog-actions>
+  </form>
+</mat-dialog-content>

@@ -13,3 +13,7 @@ export type Clientes = {
 export type DeletarCliente = {
     Deletado: Boolean,
 };
+
+export type AtualizarCliente = {
+    atualizado: Boolean,
+}

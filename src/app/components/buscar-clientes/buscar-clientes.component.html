@@ -3,7 +3,7 @@
     <mat-card appearance="outlined">
         <mat-card-content>Lista de clientes:</mat-card-content>
     </mat-card>
-
+    
     <table mat-table [dataSource]="dataRes" class="mat-elevation-z8">
 
         <ng-container matColumnDef="id">
@@ -37,6 +37,9 @@
                 <div class="example-button-row">
                     <button mat-fab aria-label="Deletar" (click)="onButtonClick(element.id)">
                         <mat-icon>delete</mat-icon>
+                      </button>
+                      <button mat-fab aria-label="Deletar" (click)="openModal(element)">
+                        <mat-icon>edit</mat-icon>
                       </button>
                 </div>
             </td>

@@ -1,0 +1,7 @@
+.example-button-row {
+    display: table-cell;
+}
+
+.elem-inline {
+    margin-right: 10px;
+}
