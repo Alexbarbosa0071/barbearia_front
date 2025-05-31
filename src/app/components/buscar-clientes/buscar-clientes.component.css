@@ -37,3 +37,17 @@ section {
   justify-content: center;
   width: 140px;
 }
+
+.create-cliente {
+  padding: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.create-cliente button {
+  background-color: rgb(0, 69, 143);
+}
+
+.create-cliente button mat-icon {
+  color: white;
+}

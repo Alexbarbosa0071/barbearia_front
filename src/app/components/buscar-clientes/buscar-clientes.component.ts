@@ -7,7 +7,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
 import { ClienteModalComponent } from '../cliente-modal/cliente-modal.component';
-
+import { CreateClienteModalComponent } from '../create-cliente-modal/create-cliente-modal.component';
 
 @Component({
   selector: 'app-buscar-clientes',
@@ -48,6 +48,21 @@ export class BuscarClientesComponent {
     openModal(dataCliente: object): void {
       const dialogRef = this.dialog.open(ClienteModalComponent, {
         data: dataCliente
+      });
+  
+      dialogRef.afterClosed().subscribe(result => {
+        if (result) {
+          console.log('The dialog was closed with result:', result);
+          // Handle the form data
+        } else {
+           console.log('The dialog was closed');
+        }
+      });
+    }
+
+    openModalCreate(): void {
+      const dialogRef = this.dialog.open(CreateClienteModalComponent, {
+        data: {}
       });
   
       dialogRef.afterClosed().subscribe(result => {

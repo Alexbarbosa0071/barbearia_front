@@ -17,3 +17,7 @@ export type DeletarCliente = {
 export type AtualizarCliente = {
     atualizado: Boolean,
 }
+
+export type CriarCliente = {
+    criado: Boolean,
+}
